@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+service ThreadNamer {
+  rpc GetThreadName (ThreadNameRequest) returns (ThreadNameResponse);
+}
+
+message ThreadNameRequest {}
+message ThreadNameResponse {
+  string name = 1;
+}
